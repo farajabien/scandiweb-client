@@ -48,7 +48,7 @@ function ProductDetails() {
 	return (
 		<div>
 			<Header handleAdd={handleAdd} />
-			<form className='product-form'>
+			<form id='product-form'>
 				<div className='product-form-inputs'>
 					<label htmlFor='sku'>SKU </label>
 					<input
