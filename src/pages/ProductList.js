@@ -32,7 +32,7 @@ function ProductList() {
 
 	return (
 		<div>
-			<Header handleDelete={handleDelete} />
+			<Header handleDelete={handleDelete} title='Product List' />
 
 			<div className='product-list-container'>
 				{products &&

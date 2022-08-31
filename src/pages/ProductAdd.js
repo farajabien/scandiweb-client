@@ -44,10 +44,26 @@ function ProductDetails() {
 				})
 		}
 	}
+	const handleCancel = () => {
+		setSku('')
+		setName('')
+		setPrice('')
+		setSize('')
+		setWeight('')
+		setHeight('')
+		setWidth('')
+		setLength('')
+
+		navigate('/')
+	}
 
 	return (
 		<div>
-			<Header handleAdd={handleAdd} />
+			<Header
+				handleAdd={handleAdd}
+				handleCancel={handleCancel}
+				title='Product Add'
+			/>
 			<form id='product_form'>
 				<div className='product-form-inputs'>
 					<label htmlFor='sku'>SKU </label>
